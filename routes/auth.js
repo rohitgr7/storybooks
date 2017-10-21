@@ -13,7 +13,7 @@ router.get('/google/callback', passport.authenticate('google', {
 });
 
 router.get('/verify', (req, res) => {
-  if(req.user) {
+  if (req.user) {
     console.log('req.user');
   } else {
     console.log('Not auth');
